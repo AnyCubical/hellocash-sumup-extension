@@ -49,7 +49,7 @@ Den Beleg schließt du in helloCash wie gewohnt selbst ab. Bei Karte wählst du 
 
 | Was | Hinweis |
 |---|---|
-| **Firefox** ab 128 oder **Chrome** (bzw. Edge, Brave …) | |
+| **Firefox** ab 140 oder **Chrome** (bzw. Edge, Brave …) | |
 | **helloCash** im Browser | Kassenansicht unter `myhellocash.com` |
 | **SumUp Solo** | Andere SumUp-Leser (Air, Solo Lite …) können die Cloud API **nicht** |
 | **SumUp-API-Key** | SumUp-Dashboard → Entwickler-Einstellungen → API-Keys |

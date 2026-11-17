@@ -1,17 +1,20 @@
 {
   "manifest_version": 3,
   "name": "helloCash → SumUp Kartenzahlung",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Fragt bei „Zahlung“ in helloCash nach Bar oder Karte und schickt bei Karte den Betrag ans SumUp-Solo-Terminal.",
   "browser_specific_settings": {
     "gecko": {
       "id": "hellocash-sumup-extension@anycubical",
-      "strict_min_version": "128.0",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
         "required": [
           "financialAndPaymentInfo"
         ]
       }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
     }
   },
   "permissions": [
