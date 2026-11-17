@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>helloCash → SumUp Kartenzahlung – Einstellungen</title>
+  <style>
+    body { font: 15px system-ui, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 16px; }
+    h2 { margin-top: 28px; font-size: 17px; }
+    label { display: block; margin: 10px 0 2px; font-weight: 600; }
+    input { width: 100%; padding: 6px; font: 14px monospace; box-sizing: border-box; }
+    small { color: #666; }
+    button { margin: 12px 8px 0 0; padding: 8px 14px; cursor: pointer; }
+    #out { margin-top: 12px; white-space: pre-wrap; font: 13px monospace; background: #f4f4f4; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>helloCash → SumUp Kartenzahlung</h1>
+
+  <h2>SumUp-Zugang</h2>
+  <label for="apiKey">API-Key</label>
+  <input id="apiKey" type="password" autocomplete="off">
+  <small>SumUp-Dashboard → Entwickler-Einstellungen → API-Keys. Bleibt nur in diesem Firefox-Profil gespeichert.</small>
+  <label for="merchantCode">Händlercode (Merchant Code)</label>
+  <input id="merchantCode">
+  <label for="affiliateAppId">Affiliate App-ID</label>
+  <input id="affiliateAppId" placeholder="z. B. com.example.kasse">
+  <label for="affiliateKey">Affiliate Key</label>
+  <input id="affiliateKey" type="password" autocomplete="off">
+  <small>Die Cloud API verlangt einen Affiliate Key, der zur App-ID passt (im SumUp-Dashboard anlegen).</small>
+
+  <h2>Terminal (SumUp Solo)</h2>
+  <label for="readerId">Reader-ID</label>
+  <input id="readerId">
+  <small>Wird beim Koppeln automatisch eingetragen.</small>
+  <label for="pairingCode">Kopplungscode vom Solo</label>
+  <input id="pairingCode" placeholder="am Solo abgemeldet → Verbindungen → API → Code">
+  <button id="pair">Terminal koppeln</button>
+  <button id="list">Gekoppelte Terminals anzeigen</button>
+
+  <h2>helloCash</h2>
+  <label for="payText">Text des Bezahlen-Buttons</label>
+  <input id="payText">
+  <label for="paySelector">CSS-Selektor Bezahlen-Button (optional, sonst Text)</label>
+  <input id="paySelector">
+  <label for="totalSelector">CSS-Selektor Gesamtbetrag</label>
+  <input id="totalSelector">
+  <small>Am einfachsten über das Erweiterungs-Symbol → „… auswählen“ direkt in helloCash.</small>
+
+  <div><button id="save">Speichern</button></div>
+  <div id="out"></div>
+  <script src="options.js"></script>
+</body>
+</html>

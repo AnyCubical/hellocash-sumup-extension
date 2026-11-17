@@ -1,0 +1,49 @@
+.hcsu-root, .hcsu-root * { box-sizing: border-box; font-family: system-ui, sans-serif; }
+
+.hcsu-overlay {
+  position: fixed; inset: 0; z-index: 2147483646;
+  background: rgba(0, 0, 0, .45);
+  display: flex; align-items: center; justify-content: center;
+}
+.hcsu-box {
+  background: #fff; color: #222; border-radius: 12px; padding: 24px;
+  width: min(440px, 92vw); box-shadow: 0 10px 40px rgba(0, 0, 0, .3); text-align: center;
+}
+.hcsu-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.hcsu-amount { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+.hcsu-amount-input { width: 100%; font-size: 22px; padding: 8px; margin-bottom: 12px; text-align: center; }
+.hcsu-msg { min-height: 20px; margin-bottom: 12px; font-size: 14px; color: #555; }
+.hcsu-err { color: #b00020; font-weight: 600; }
+.hcsu-buttons { display: flex; gap: 12px; }
+.hcsu-btn {
+  flex: 1; font-size: 22px; font-weight: 600; padding: 22px 0; border: 0;
+  border-radius: 10px; cursor: pointer; color: #fff;
+}
+.hcsu-btn:disabled { opacity: .5; cursor: default; }
+.hcsu-bar { background: #2e7d32; }
+.hcsu-karte { background: #1565c0; }
+.hcsu-link { margin-top: 14px; background: none; border: 0; color: #666; cursor: pointer; font-size: 14px; }
+
+.hcsu-panel {
+  position: fixed; right: 16px; bottom: 16px; z-index: 2147483645;
+  width: 320px; padding: 14px 16px; border-radius: 10px; color: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .3);
+}
+.hcsu-pending { background: #1565c0; }
+.hcsu-ok { background: #2e7d32; }
+.hcsu-bad { background: #b00020; }
+.hcsu-warn { background: #e65100; }
+.hcsu-panel-title { font-weight: 700; font-size: 16px; }
+.hcsu-panel-text { margin-top: 4px; font-size: 15px; }
+.hcsu-panel-actions { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.hcsu-btn-small {
+  background: rgba(255, 255, 255, .2); color: #fff; border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px;
+}
+
+.hcsu-toast {
+  position: fixed; left: 50%; top: 16px; transform: translateX(-50%); z-index: 2147483647;
+  background: #222; color: #fff; padding: 10px 16px; border-radius: 8px; font-size: 14px;
+  max-width: 90vw; word-break: break-all;
+}
+.hcsu-pick-hover { outline: 3px solid #e65100 !important; outline-offset: 2px; cursor: crosshair !important; }

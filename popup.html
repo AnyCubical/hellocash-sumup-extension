@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 14px system-ui, sans-serif; width: 280px; margin: 12px; }
+    button { width: 100%; padding: 8px; margin: 4px 0; cursor: pointer; }
+    label { display: block; margin: 6px 0 10px; }
+    .sel { font: 11px monospace; color: #555; word-break: break-all; margin-bottom: 6px; }
+    #info { color: #b00020; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <label><input type="checkbox" id="enabled"> Bar/Karte-Abfrage aktiv</label>
+  <button id="pickPay">„Bezahlen“-Button auswählen</button>
+  <div class="sel" id="paySel"></div>
+  <button id="pickTotal">Gesamtbetrag auswählen</button>
+  <div class="sel" id="totalSel"></div>
+  <button id="options">Einstellungen (SumUp)</button>
+  <div id="info"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
